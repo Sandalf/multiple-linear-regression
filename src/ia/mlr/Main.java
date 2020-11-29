@@ -20,7 +20,7 @@ public class Main {
         double x1Arg = Double.parseDouble(args[0]);
         double x2Arg = Double.parseDouble(args[1]);
 
-        double[][] inegiData = {
+        double[][] exampleData = {
             {41.9, 29.1, 251.3},
             {43.4, 29.3, 251.3},
             {43.9, 29.5, 248.3},
@@ -40,7 +40,7 @@ public class Main {
             {77.8, 32.9, 349}
         };
 
-        Dataset dataset = new Dataset(inegiData);
+        Dataset dataset = new Dataset(exampleData);
         MultipleLinearRegression mlr = new MultipleLinearRegression(dataset);
         mlr.printEquation();
         mlr.predict(x1Arg, x2Arg);
